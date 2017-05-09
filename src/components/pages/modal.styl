@@ -1,0 +1,87 @@
+@import '../../variables'
+
+.modal-dialog
+    margin: 10% auto
+
+.modal-s
+    .modal-dialog
+        width: 300px
+    
+.modal-m
+    .modal-dialog
+        width: 450px
+    
+.modal-l
+    .modal-dialog
+        width: 600px
+
+.modal-header
+    text-align: center
+    border-bottom: none
+    .modal-title
+        margin: 15px 0
+        letter-spacing: 5px
+        font-weight: 400
+
+.modal-content
+    .button-long
+        width: 100%
+        margin-top: 20px
+    .modal-footer
+        padding: 10px 30px 20px
+        text-align: center
+        border-top: $border
+        line-height: 30px
+        button.btn
+            width: 40%
+            margin: 10px 15px 5px
+        .modal-title
+            margin: -20px 100px 0 100px
+            font-size: 16px
+            background-color: $light
+
+.modal-dbd
+    .modal-header
+        border-bottom: $border
+        height: 44px
+        padding: 4px
+        .close
+            padding: 8px
+        .edit-toolbar
+            li a
+                padding: 3px
+            .dropdown-toggle
+                padding: 3px
+                border: none
+                background-color: $light
+                box-shadow: none
+                .caret
+                    display: none
+            .toolbar-button
+                font-size:20px
+                color: rgba($dark, 0.7)
+                line-height: 30px
+                margin: 0 10px
+    .modal-dialog
+        width: 590px
+        height: 100%
+        margin: 0 auto
+    .modal-content
+        height: 100%
+        border-radius: 0
+    .modal-body
+        padding: 0
+        height: 94%
+        overflow-y: auto
+        .padding
+            padding: 20px
+    .modal-wrap
+        height: 100%
+
+button.regi.btn.btn-link{
+    float: right;
+}
+.input-group-addon, .input-group-btn>button.btn.btn-default {
+    background-color: rgba($dark, 0.1);
+    margin-top: 0px;
+}

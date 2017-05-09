@@ -1,0 +1,188 @@
+=== store中各个变量的说明与作用
+
+== 以初始化的initialState为例
+
+const initialState = {
+== modalShow 储存一些与登录相关的变量信息
+    'modalShow': {
+        'username': '', // 用户输入的用户名
+        'password': '', // 用户输入的密码
+        'showlogin': false, // 是否显示登录模态框, 初始默认不显示
+        'showregister': false, // 是否显示注册模态框, 初始默认不显示
+        'successlogin': false, // 登录成功标识, 初始为false
+        'discoverrefreshed': false,
+        'showwechat': false, // 是否显示微信登录模态框
+        'clicktoclose': false,
+        'neworganization': false, // 新建组织标志
+        'cancelorg': false, // 退出组织标志
+        'createbase': false, // 新建库标志
+        'deletebase': false // 删除库标志
+    },
+== formEdit 存储表单编辑器相关信息
+    'formEdit': {
+        'currentForm': {}, //当前表单
+        'currentDrop': [], // 当前拖拽表单项
+        'opts': [], // 编辑表单操作数组
+        'fields': []
+    },
+== dirEdit 存储一些编辑目录相关信息
+    'dirEdit': {
+        'newDirName': '', // 新建目录的目录名字
+        'changeDirName': '', // 修改目录
+        'changeDirIndex': '', // 交换目录位置
+        'values': [] // 当前编辑目录的下级目录
+    },
+    'searchState': {
+        'searchstr': '' // 要搜索的字符串
+    },
+== 各个模态框的相关状态
+    'modalState': {
+        'excelState': { //导出excel相关模态框的状态
+            'showExcel': false, // 是否显示模态框
+            'getUrl': false, // 是否导出成功
+            'url': '' // 下载url
+        },
+        'filterState': { // 高级筛选模态框
+            'showFilter': false, // 是否显示模态框
+            'queryConditionList': [] // 筛选条件数组
+        }
+    },
+== 中间菜单状态
+    'menuState': {
+        'shownavleft1': true, //左侧部件是否显示
+        'shownavleft2': false,
+        'shownavright1': true, // 右侧部件是否显示
+        'shownavright2': false,
+        'back': true, // 返回按钮
+        'list': false, // 列表视图
+        'set': false, // 集
+        'org': false, // 组织
+        'share': false, // 分享
+        'comments': false, // 评论
+        'like': true, // 赞
+        'favorites': true, // 收藏
+        'preference': true,
+        'showorg': false // 显示组织
+    },
+    'pwCoherence': { // 找回密码相关
+        'newpw': '',
+        'newpwcopy': '',
+        'oldpw': ''
+    },
+    'formCache': { // 表单缓存
+    },
+    'baseCache': { // 库缓存
+    },
+    'docCache': { // 条目缓存
+    },
+    'dirCache': { // 目录缓存
+    },
+    'orgCache': { // 组织缓存
+    },
+    'orgUserCache': { // 组织用户缓存
+    },
+    'nameCache': { // 名字缓存
+    },
+== 当前用户相关信息
+    'currentUser': {
+        'photo': '', // 照片
+        'synopsis': '', // 简介
+        'loginnum': 0, // 登录数
+        'uid': '',
+        'password': '', // 密码
+        'phone': '', // 电话
+        'nickname': '', // 昵称
+        'id': 0,
+        'email': '', // email
+        'status': 0, // 状态
+        'username': '', // 用户名
+        'auth': {} // 库/目录权限
+    },
+    'hotbases': { // 热门库
+        'values': []
+    },
+    'hotdirs': { // 热门目录
+        'values': []
+    },
+    'hotdocs': { // 热门条目
+        'values': []
+    },
+    'setbases': { // 集下库
+        'values': []
+    },
+    'setInfo': { // 集详情
+    },
+    'searchbases': { // 搜索到的库
+        'values': []
+    },
+    'myspace': { // 我的空间
+        'values': []
+    },
+    'currentSpace': { // 当前空间
+        'type': 'view', // 记录类型, 默认浏览
+        'name': '浏览记录',
+        'resourceList': {
+            'values': [], // 库
+            'info': {} // 详情
+        }
+    },
+== 当前状态
+    'currentState': {
+        'currentAbstractType': 'base', // 当前摘要应显示的类型
+        'rootType': '', // 根类型, 库或者目录
+        'navLeftType': 'dir', // 左侧栏显示状态
+        'midConType': 'listview', // 中间栏显示状态
+        'router': ''
+    },
+    'currentBase': '', // 当前库ID
+    'currentDir': '', // 当前目录
+    'currentDoc': '', // 当前条目
+    'currentSet': '', // 当前集
+    'currentOrg': '', // 当前组织
+    'currentDirTree': { // 当前目录树
+        'currentDir': '', // 正在查看的目录/库ID
+        'value': [] // 子目录数组
+    },
+    'editActionQuery': {
+        'type': '',
+        'id': '',
+        'values': []
+    },
+    'currentEditAuth': {}, // 当前编辑的权限信息
+    'currentEditSchema': {}, // 当前编辑的对象
+    'currentEditField': {}, // 当前编辑的表单
+    'currentDocList': { // 当前条目列表
+        info: {
+            end: true // 是否结束
+        },
+        'fields': [], // 表头
+        'values': [] // 内容
+    },
+    'myorgs': { //我的组织
+        'values': [],
+        'suggestusers': '',
+        'orgState': 'list',
+        'aimList': '',
+        'checkValue': {}
+    },
+    'baseoforg': {
+        'values': []
+    },
+    'tempSetCache': {
+    },
+    'userPageState': {
+        'showPersonalInfo': true,
+        'showEdit': false,
+        'showpw': false,
+        'bindaccount': false
+    },
+    'wechatmodalshow': {
+        'showform1': false,
+        'showform2': false,
+        'showform3': false,
+        'showform4': false,
+        'showform5': false,
+        'showform6': false,
+        'showform7': false
+    }
+};

@@ -1,0 +1,55 @@
+{
+	"baseCache": {
+		"baseid": {"basedetail"}
+	},
+	"docCache": {
+		"docid": {"docdetail"}
+	},
+	"dirCache": {
+		"dirid" : {"dirdetail"}
+	},
+	"currentUser": {
+		"photo": "",
+    	"synopsis": "我是管理员",
+    	"loginnum": 166,
+    	"uid": "56fe8b8b0938f5e400ab95b9",
+    	"password": "",
+    	"phone": "13810537262",
+    	"nickname": "数据道",
+    	"id": 266,
+    	"email": "",
+    	"status": 0,
+    	"username": "admin"
+	},
+	"hotbases": {
+		"values": [],
+		"info": {}
+	},
+	"hotdocs": {
+		"values": [],
+		"info": {}
+	},
+	"currentSpace": {
+		"type": "",
+		"name": "",
+		"resourceList": {
+			"values": [],
+			"info": {}
+		}
+	},
+	"currentBase": "baseid",
+	"currentDir": "dirid",
+	"currentDirTree": [
+		{
+      		"name": "name",
+      		"id": "name",
+      		"subdirs": []
+    	},
+	],
+	"currentDocList": {
+		"values": [],
+		"fields": [],
+		"info": {},
+		"view": {}
+	}
+}
